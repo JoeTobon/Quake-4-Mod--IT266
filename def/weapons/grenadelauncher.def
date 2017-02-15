@@ -246,14 +246,14 @@ entityDef projectile_grenade
 																											
 	"speed"						"800"
 	"angular_velocity"			"-10 5 1"
-	"settle_duration"			"0.08"
+	"settle_duration"			"0.12"
 	
 	"linear_friction"			"0"
 	"angular_friction"			"0"
 	"contact_friction"			"10"
 	"bounce"					"8"
 	"gravity"					".35"
-	"fuse"						"2"
+	"fuse"						"1.5"
 								
 	"detonate_on_fuse"			"1"
 	"detonate_on_death"			"0"
@@ -279,6 +279,16 @@ entityDef projectile_grenade
 	"fx_impact_rock"			"effects/weapons/grenadelauncher/impact_concrete.fx"
 	"fx_impact_rock_mp"			"effects/weapons/rocketlauncher/impact_mp.fx"
 	"fx_impact_water"			"effects/ambient/splash_med.fx"
+
+	//Lightning effects
+	"fx_impact"					"effects/weapons/lightninggun/impact.fx"
+	"fx_impact_mp"					"effects/weapons/lightninggun/impact_mp.fx"
+	"fx_trail"					"effects/weapons/lightninggun/trail.fx"	
+	"fx_trail_world"			"effects/weapons/lightninggun/trail_world.fx"	
+	"fx_crawl"					"effects/weapons/lightninggun/crawl.fx"	
+	"fx_spire"					"effects/weapons/lightninggun/spire.fx"
+	"fx_respawn"				"effects/mp/itemrespawn.fx"
+	"crawlTime"					".05"
 
 	"friendly_impact"			"0"
 

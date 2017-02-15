@@ -692,8 +692,8 @@ entityDef player_marine
 	// default weapons
 	// seperate multiple weapons with commas (no spaces).
 	// NOTE: default ammo must be specified explicitly.
-	"weapon"						"weapon_grenadelauncher"
-	"current_weapon"					"4"
+	"weapon"						"weapon_grenadelauncher,weapon_lightninggun,weapon_shotgun"
+	"current_weapon"					"2,4,8"
 
 	"pm_jumpheight"						"60"
 	"pm_stepsize"						"16"
@@ -721,23 +721,23 @@ entityDef player_marine
 	"respawn_delay"						"1.7"		// minimum delay for respawning after death
 
 	// stats
-	"health"						    "100"
-	"maxhealth"						    "100"
-	"armor"							    "1000"
-	"maxarmor"						    "1000"
-	"minRestoreHealth0"					"10"		// Minimum health when loading a game for skill level 0
-	"minRestoreHealth1"					"10"		// Minimum health when loading a game for skill level 1
+	"health"						    "10000"
+	"maxhealth"						    "10000"
+	"armor"							    "10000"
+	"maxarmor"						    "10000"
+	"minRestoreHealth0"					"10000"		// Minimum health when loading a game for skill level 0
+	"minRestoreHealth1"					"10000"		// Minimum health when loading a game for skill level 1
 
 	// ammo
 	"ammo_railgun"						"0"
 	"ammo_machinegun"					"0"
 	"ammo_nailgun"						"0"
 	"ammo_blaster"						"-1"
-	"ammo_shotgun"						"0"
+	"ammo_shotgun"						"-1"
 	"ammo_hyperblaster"					"0"
 	"ammo_rocketlauncher"					"0"
 	"ammo_grenadelauncher"					"-1"
-	"ammo_lightninggun"					"0"
+	"ammo_lightninggun"					"-1"
 	"ammo_none"						"-1"
 
 	"max_ammo_blaster"					"-1"
