@@ -120,6 +120,7 @@ entityDef weapon_grenadelauncher
 	"snd_acquire"				"pickup_weapon"
 	"snd_quaddamage"			"weapon_quaddamage_fire"
 	"snd_noAmmo"				"weapon_grenadelauncher_dryfire"
+	
 
 	"def_viewStyle"				"viewStyle_q3_grenadelauncher"
 	"def_viewStyle1"			"viewStyle_shouldered_grenadelauncher"
@@ -189,7 +190,7 @@ model weapon_grenadelauncher_view
 	anim fire 					models/weapons/grenadelauncher/fire.md5anim	
 	{
 		frame 1					sound_weapon	player_grenadelauncher_fire
-		frame 1					sound_item		player_grenadelauncher_fire_stereo
+		frame 1					sound_item		player_grenadelauncher_fire_stereo				
 	}
 	anim fire_empty				models/weapons/grenadelauncher/fire_empty.md5anim	
 	{
@@ -270,7 +271,8 @@ entityDef projectile_grenade
 
 	"fx_fly"				"effects/weapons/grenadelauncher/trail.fx"
 	"fx_fly_mp"				"effects/weapons/grenadelauncher/trail_mp.fx"
-	"fx_detonate"				"effects/weapons/grenadelauncher/detonate.fx"
+	//"fx_detonate"				"effects/weapons/grenadelauncher/detonate.fx"
+	"fx_detonate"				"effects/weapons/lightninggun/crawl.fx"	
 	"fx_detonate_mp"			"effects/weapons/rocketlauncher/detonate_mp.fx"
 	"fx_impact"				"effects/weapons/grenadelauncher/impact.fx"
 	"fx_impact_mp"				"effects/weapons/rocketlauncher/impact_mp.fx"
@@ -281,18 +283,18 @@ entityDef projectile_grenade
 	"fx_impact_water"			"effects/ambient/splash_med.fx"
 
 	//Lightning effects
-	"fx_impact"					"effects/weapons/lightninggun/impact.fx"
-	"fx_impact_mp"					"effects/weapons/lightninggun/impact_mp.fx"
-	"fx_trail"					"effects/weapons/lightninggun/trail.fx"	
-	"fx_trail_world"			"effects/weapons/lightninggun/trail_world.fx"	
-	"fx_crawl"					"effects/weapons/lightninggun/crawl.fx"	
-	"fx_spire"					"effects/weapons/lightninggun/spire.fx"
-	"fx_respawn"				"effects/mp/itemrespawn.fx"
-	"crawlTime"					".05"
+	//"fx_impact"					"effects/weapons/lightninggun/impact.fx"
+	//"fx_impact_mp"					"effects/weapons/lightninggun/impact_mp.fx"
+	//"fx_trail"					"effects/weapons/lightninggun/trail.fx"	
+	//"fx_trail_world"			"effects/weapons/lightninggun/trail_world.fx"	
+	//"fx_crawl"					"effects/weapons/lightninggun/crawl.fx"	
+	//"fx_spire"					"effects/weapons/lightninggun/spire.fx"
+	//"fx_respawn"				"effects/mp/itemrespawn.fx"
+	//"crawlTime"					".05"
 
 	"friendly_impact"			"0"
 
-	"snd_ricochet"				"grenade_bounce"	
+	"snd_ricochet"				"player_sounds_pain_huge"	
 
 	"net_syncPhysics"			"1"
 	
