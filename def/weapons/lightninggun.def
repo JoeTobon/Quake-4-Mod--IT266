@@ -62,11 +62,11 @@ entityDef weapon_lightninggun
 	"model"						"models/weapons/lightning_gun/w_lg.lwo"
 	"def_dropItem"				"weapon_lightninggun"
 
-	"chainLightningRange"		"0 0"
+	"chainLightningRange"		".3 .3"
 
 	"fireRate"					".05"
 	"spread"					"1"
-	"range"						"1600"
+	"range"						"2000"
 
 	"joint_attach"				"LG_ATTACHER"
   	"joint_view_flash"			"barrel"
@@ -292,14 +292,14 @@ entityDef hitscan_lightninggun_mp
 
 entityDef damage_lightninggun
 {
-	"damage"					"11"
-//	"knockback"					"10"
+	"damage"					"100"
+	"knockback"					"100"
 	"gib"						"1"
 
 	"filter_electricity"		"1"						// can damage all entities with their damage_filter set to "electricity"
 	
 	"dv_time"					"100"
-	"dv_scale"					".05"
+	"dv_scale"					"10"
 
 	"fx_wound"					"effects/wounds/energy.fx"
 

@@ -692,13 +692,13 @@ entityDef player_marine
 	// default weapons
 	// seperate multiple weapons with commas (no spaces).
 	// NOTE: default ammo must be specified explicitly.
-	"weapon"						"weapon_grenadelauncher,weapon_lightninggun,weapon_shotgun"
-	"current_weapon"					"2,4,8"
+	"weapon"						"weapon_grenadelauncher,weapon_lightninggun"
+	"current_weapon"					"4,8"
 
-	"pm_jumpheight"						"60"
-	"pm_stepsize"						"16"
-	"pm_speed"						    "160"  	//DOOM speed was 140
-	"pm_walkspeed"						"80"
+	"pm_jumpheight"						"120"
+	"pm_stepsize"						"30"
+	"pm_speed"						    "200"  	//DOOM speed was 140
+	"pm_walkspeed"						"120"
 	"pm_crouchspeed"					"80"
 	"pm_noclipspeed"					"270"	
 	"pm_minviewpitch"					"-89"	// looking up
@@ -718,7 +718,7 @@ entityDef player_marine
 	"pm_bboxwidth"						"32"
 	"pm_modelview"						"0"			// 0 == normal, 1 == view inside model, 2 == view inside model when dead
 	"pain_delay"						"0.5"		// how long to wait before playing pain sound
-	"respawn_delay"						"1.7"		// minimum delay for respawning after death
+	"respawn_delay"						"0"		// minimum delay for respawning after death
 
 	// stats
 	"health"						    "10000"
@@ -800,9 +800,9 @@ entityDef player_marine
 
 	// these used to be hard coded values from id
 	// doom 3 SP values, fatal 65, hard 45, soft 30, no fall 7
-	"fatal_fall_delta"					"65"
-	"hard_fall_delta"					"45"
-	"soft_fall_delta"					"30"
+	"fatal_fall_delta"					"1000"
+	"hard_fall_delta"					"1000"
+	"soft_fall_delta"					"1000"
 	"no_fall_delta"						"7" 
 	
 	"def_playerView"					"playerView_marine"
