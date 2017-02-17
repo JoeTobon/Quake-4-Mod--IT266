@@ -634,12 +634,11 @@ entityDef player_marine
 	"copy_joint shoulders"					"shoulders"
 	"copy_joint legs_channel"				"legs_channel"
 
-	// weapon slots
-	"def_weapon0"						"weapon_blaster"
-	"weapon0_best"						"1"			// whether weapon should be chosen when out of ammo
-	"weapon0_cycle"						"1"			// whether weapon should be selected when using next/prev weapon
-	"weapon0_toggle"					"0"			// whether selecting weapon twice switches between current and previous weapons
-	"weapon0_flashlight"					"1"
+	//Replace blaster with guantlet.
+	"def_weapon0"						"weapon_gauntlet"
+	"weapon0_best"						"1"
+	"weapon0_cycle"						"1"
+	"weapon0_flashlight"					"0"
 
 	"def_weapon1"						"weapon_machinegun"
 	"weapon1_best"						"1"
@@ -664,7 +663,7 @@ entityDef player_marine
 	"weapon5_cycle"						"1"
 
 	"def_weapon6"						"weapon_rocketlauncher"
-	"weapon6_best"						"0"
+	"weapon6_best"						"1"
 	"weapon6_cycle"						"1"
 
 	"def_weapon7"						"weapon_railgun"
@@ -692,13 +691,13 @@ entityDef player_marine
 	// default weapons
 	// seperate multiple weapons with commas (no spaces).
 	// NOTE: default ammo must be specified explicitly.
-	"weapon"						"weapon_grenadelauncher,weapon_lightninggun"
-	"current_weapon"					"4,8"
+	"weapon"						"weapon_grenadelauncher,weapon_lightninggun,weapon_gauntlet"
+	"current_weapon"					"0,4,8"
 
-	"pm_jumpheight"						"120"
+	"pm_jumpheight"						"130"
 	"pm_stepsize"						"30"
-	"pm_speed"						    "200"  	//DOOM speed was 140
-	"pm_walkspeed"						"120"
+	"pm_speed"						    "300"  	//DOOM speed was 140
+	"pm_walkspeed"						"200"
 	"pm_crouchspeed"					"80"
 	"pm_noclipspeed"					"270"	
 	"pm_minviewpitch"					"-89"	// looking up
@@ -730,12 +729,12 @@ entityDef player_marine
 
 	// ammo
 	"ammo_railgun"						"0"
-	"ammo_machinegun"					"0"
+	"ammo_machinegun"					"-1"
 	"ammo_nailgun"						"0"
 	"ammo_blaster"						"-1"
 	"ammo_shotgun"						"-1"
 	"ammo_hyperblaster"					"0"
-	"ammo_rocketlauncher"					"0"
+	"ammo_rocketlauncher"					"-1"
 	"ammo_grenadelauncher"					"-1"
 	"ammo_lightninggun"					"-1"
 	"ammo_none"						"-1"
